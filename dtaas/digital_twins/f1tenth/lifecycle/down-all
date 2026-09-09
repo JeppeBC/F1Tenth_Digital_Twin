@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Not a DTaaS lifecycle phase — a convenience command. Stops BOTH the base
+# DTaaS stack and the F1Tenth overlay together, so a plain `docker compose
+# down` from workspace-dex-localhost/ (which only knows its own
+# docker-compose.yml) doesn't leave f1tenth-dt/influxdb/grafana running
+# behind on their own ports.
+source "$(dirname "${BASH_SOURCE[0]}")/_common.sh"
+
+dtaas_compose down

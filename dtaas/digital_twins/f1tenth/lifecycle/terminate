@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Terminate phase: stop the DT's execution. Leaves influxdb/grafana running
+# and all data (dtaas/data/, InfluxDB, Grafana dashboards) intact so you can
+# still run analyze/save afterwards. Use lifecycle/clean for a full wipe.
+source "$(dirname "${BASH_SOURCE[0]}")/_common.sh"
+
+echo "Stopping f1tenth-dt..."
+dtaas_compose stop f1tenth-dt
+
+echo "Stopped. influxdb/grafana are still running (docker compose ... stop influxdb grafana to stop those too)."

@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# Analyze phase: run the repo's ORIGINAL, unmodified plot_latency.py /
+# plot_trajectory.py (from src/, untouched) against the most recent run's
+# CSVs. Runs on the host, not in the container — needs
+# `pip install -r requirements.txt` (repo root) done once beforehand.
+#
+# Usage: lifecycle/analyze [run_dir]   (defaults to the most recent run)
+source "$(dirname "${BASH_SOURCE[0]}")/_common.sh"
+
+REPO_ROOT="$(cd "$F1TENTH_DIR/.." && pwd)"
+RUN_DIR="${1:-$(latest_run_dir)}"
+if [ -z "$RUN_DIR" ]; then
+    echo "ERROR: no run directories found under $F1TENTH_DIR/data/" >&2
+    exit 1
+fi
+
+echo "Analyzing $RUN_DIR"
+
+shopt -s nullglob
+latency_csvs=("$RUN_DIR"/latency/*.csv)
+trajectory_csvs=("$RUN_DIR"/trajectory/*.csv)
+shopt -u nullglob
+
+if [ ${#latency_csvs[@]} -gt 0 ]; then
+    python3 "$REPO_ROOT/src/plot_latency.py" "${latency_csvs[@]}" --no-show
+else
+    echo "  (no latency CSVs)"
+fi
+
+if [ ${#trajectory_csvs[@]} -gt 0 ]; then
+    python3 "$REPO_ROOT/src/plot_trajectory.py" "${trajectory_csvs[@]}" --no-show
+else
+    echo "  (no trajectory CSVs)"
+fi
+
+echo "PNGs saved next to the CSVs in $RUN_DIR"

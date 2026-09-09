@@ -1,0 +1,2211 @@
+[INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2026-08-28-07-34-23-574224-975f4515f9d0-382
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [rviz2-1]: process started with pid [670]
+[INFO] [gym_bridge-2]: process started with pid [672]
+[INFO] [lifecycle_manager-3]: process started with pid [674]
+[INFO] [map_server-4]: process started with pid [676]
+[INFO] [robot_state_publisher-5]: process started with pid [678]
+[INFO] [relay-6]: process started with pid [680]
+[INFO] [dt_pt_bridge-7]: process started with pid [682]
+[INFO] [pt_odom_receiver-8]: process started with pid [684]
+[INFO] [latency_logger-9]: process started with pid [686]
+[INFO] [trajectory_logger-10]: process started with pid [688]
+[rviz2-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ubuntu'
+[lifecycle_manager-3] [INFO] [1787902464.430105217] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-3] [INFO] [1787902464.433866096] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-3] [INFO] [1787902464.863610967] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-3] [INFO] [1787902464.863733177] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-4] [INFO] [1787902464.865626367] [map_server]: 
+[map_server-4] 	map_server lifecycle node launched. 
+[map_server-4] 	Waiting on external lifecycle transitions to activate
+[map_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-4] [INFO] [1787902464.865787259] [map_server]: Creating
+[map_server-4] [INFO] [1787902464.866215607] [map_server]: Configuring
+[map_server-4] [INFO] [1787902464.866284285] [map_io]: Loading yaml file: /opt/f1tenth_ws/src/f1tenth_gym_ros/maps/levine.yaml
+[map_server-4] [INFO] [1787902464.867824042] [map_io]: resolution: 0.05
+[map_server-4] [INFO] [1787902464.867836772] [map_io]: origin[0]: -51.225
+[map_server-4] [INFO] [1787902464.867839484] [map_io]: origin[1]: -51.225
+[map_server-4] [INFO] [1787902464.867841861] [map_io]: origin[2]: 0
+[map_server-4] [INFO] [1787902464.867844379] [map_io]: free_thresh: 0.196
+[map_server-4] [INFO] [1787902464.867846681] [map_io]: occupied_thresh: 0.65
+[map_server-4] [INFO] [1787902464.867849433] [map_io]: mode: trinary
+[map_server-4] [INFO] [1787902464.867852392] [map_io]: negate: 0
+[map_server-4] [INFO] [1787902464.869301646] [map_io]: Loading image_file: /opt/f1tenth_ws/src/f1tenth_gym_ros/maps/levine.png
+[robot_state_publisher-5] [INFO] [1787902465.115105877] [ego_robot_state_publisher]: got segment ego_racecar/back_left_wheel
+[robot_state_publisher-5] [INFO] [1787902465.115254153] [ego_robot_state_publisher]: got segment ego_racecar/back_right_wheel
+[robot_state_publisher-5] [INFO] [1787902465.115263042] [ego_robot_state_publisher]: got segment ego_racecar/base_link
+[robot_state_publisher-5] [INFO] [1787902465.115266800] [ego_robot_state_publisher]: got segment ego_racecar/front_left_hinge
+[robot_state_publisher-5] [INFO] [1787902465.115270004] [ego_robot_state_publisher]: got segment ego_racecar/front_left_wheel
+[robot_state_publisher-5] [INFO] [1787902465.115273158] [ego_robot_state_publisher]: got segment ego_racecar/front_right_hinge
+[robot_state_publisher-5] [INFO] [1787902465.115276254] [ego_robot_state_publisher]: got segment ego_racecar/front_right_wheel
+[robot_state_publisher-5] [INFO] [1787902465.115279200] [ego_robot_state_publisher]: got segment ego_racecar/laser_model
+[map_server-4] [INFO] [1787902465.191931637] [map_io]: Read map /opt/f1tenth_ws/src/f1tenth_gym_ros/maps/levine.png: 2048 X 2048 map @ 0.05 m/cell
+[lifecycle_manager-3] [INFO] [1787902465.204255463] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-4] [INFO] [1787902465.204441037] [map_server]: Activating
+[map_server-4] [INFO] [1787902465.206872724] [map_server]: Creating bond (map_server) to lifecycle manager.
+[lifecycle_manager-3] [INFO] [1787902465.311304238] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-3] [INFO] [1787902465.311398170] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-3] [INFO] [1787902465.311420800] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[dt_pt_bridge-7] [INFO] [1787902465.549489870] [dt_pt_bridge]: dt_pt_bridge ready
+[dt_pt_bridge-7]   Sub : /drive  (only forwarding frame_id='dt_send')
+[dt_pt_bridge-7]   UDP → 172.20.10.8:9870
+[dt_pt_bridge-7]   Pub : /teleop_echo  (for latency_logger)
+[dt_pt_bridge-7]   Rate: 50 Hz max
+[rviz2-1] [INFO] [1787902465.774225742] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-1] [INFO] [1787902465.774309092] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[latency_logger-9] [INFO] [1787902465.807427388] [latency_logger]: Logging latency to /workspace/f1tenth/data/20260828_073423/latency/latency_1787902465.csv
+[latency_logger-9] [INFO] [1787902465.807793582] [latency_logger]: Waiting for /teleop_echo (frame_id='dt_send') from dt_pt_bridge...
+[rviz2-1] [INFO] [1787902465.837225701] [rviz2]: Stereo is NOT SUPPORTED
+[trajectory_logger-10] [INFO] [1787902465.901754710] [trajectory_logger]: Trajectory logger ready
+[trajectory_logger-10]   DT topic : /ego_racecar/sim_odom
+[trajectory_logger-10]   PT topic : /odom
+[trajectory_logger-10]   Output   : /workspace/f1tenth/data/20260828_073423/trajectory/trajectory_20260828_073423.csv
+[trajectory_logger-10]   Run label: 20260828_073423
+[pt_odom_receiver-8] [INFO] [1787902465.937735819] [pt_odom_receiver]: pt_odom_receiver listening on UDP :9871
+[pt_odom_receiver-8]   → /odom          (for trajectory_logger)
+[pt_odom_receiver-8]   → /initialpose   DISABLED
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'ego_namespace', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'ego_odom_topic', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'ego_opp_odom_topic', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'ego_scan_topic', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'ego_drive_topic', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'opp_namespace', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'opp_odom_topic', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'opp_ego_odom_topic', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'opp_scan_topic', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'opp_drive_topic', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'scan_distance_to_base_link', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'scan_fov', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'scan_beams', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'map_path', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'map_img_ext', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'num_agent', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'sx', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'sy', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'stheta', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'sx1', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'sy1', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'stheta1', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[gym_bridge-2] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'kb_teleop', declaring a parameter only providing its name is deprecated. You have to either:
+[gym_bridge-2] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[gym_bridge-2] 	- Pass a name and a parameter type.
+[gym_bridge-2] 	- Pass a name and a descriptor with `dynamic_typing=True
+[gym_bridge-2]   warnings.warn(
+[rviz2-1] [INFO] [1787902466.290889971] [rviz2]: Trying to create a map of size 2048 x 2048 using 1 swatches
+[rviz2-1] [ERROR] [1787902466.317114136] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-1] active samplers with a different type refer to the same texture image unit
+[gym_bridge-2] /opt/f1tenth_gym/gym/f110_gym/envs/base_classes.py:95: UserWarning: Chosen integrator is RK4. This is different from previous versions of the gym.
+[gym_bridge-2]   warnings.warn(f"Chosen integrator is RK4. This is different from previous versions of the gym.")
+[dt_pt_bridge-7] [WARN] [1787902470.538600095] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902470.795446226] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902470.890144254] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902471.076798104] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902475.538511729] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902475.795237434] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902475.889939715] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902476.102741383] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902480.538506336] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902480.795286848] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902480.889957892] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902481.027182373] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902485.538603255] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902485.795646927] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902485.890356741] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902486.058576278] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902490.538580303] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902490.795424098] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902490.889916653] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902491.084957377] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902495.538823561] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902495.795389168] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902495.890142915] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902496.114802451] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902500.538615321] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902500.795312189] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902500.889907600] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902501.044611489] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902505.540093333] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902505.795490380] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902505.891808203] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902506.070671421] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902510.538476257] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902510.795284637] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902510.890007359] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902511.098276910] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902515.538631821] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902515.795408410] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902515.890113491] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902516.026089086] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902520.538706747] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902520.795354280] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902520.889900041] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902521.054532725] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902525.538576479] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902525.797136719] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902525.891403929] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902526.083970793] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902530.538587669] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902530.795366255] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902530.889999978] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902531.112349400] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902535.538630416] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902535.795362497] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902535.890506140] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902536.036008967] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902540.538502450] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902540.795330670] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902540.890007372] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902541.065393209] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902545.538644206] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902545.795488650] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902545.890212863] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902546.090068830] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902550.538592282] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902550.795986636] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902550.890196940] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902551.115368506] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902555.538624618] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902555.795305249] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902555.889889522] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902556.040729420] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902560.538510990] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902560.795575142] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902560.889895378] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902561.067741069] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902565.538482055] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902565.795266702] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902565.889972459] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902566.089975671] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902570.538461731] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902570.795360293] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902570.890182006] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902571.113605945] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902575.538503293] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902575.795489623] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902575.889938183] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902576.040218939] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902580.538562136] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902580.795768170] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902580.890488385] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902581.067791607] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902585.538796842] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902585.795589284] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902585.890210593] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902586.093386748] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902590.538543442] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902590.795314175] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902590.889950713] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902591.121032583] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902595.538382162] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902595.795259555] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902595.889857417] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902596.047056794] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902600.538567516] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902600.795674330] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902600.889911275] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902601.075340257] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902605.538529390] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902605.795426298] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902605.890014472] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902606.103751418] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902610.538506273] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902610.795321279] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902610.889844886] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902611.030129237] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902615.538570630] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902615.795386259] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902615.890115832] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902616.056297839] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902620.539215882] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902620.795337112] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902620.890085476] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902621.084062445] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902625.538425219] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902625.795341628] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902625.889829827] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902626.110197845] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902630.538517454] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902630.795329464] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902630.889878621] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902631.035778797] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902635.538514205] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902635.795323927] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902635.889873733] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902636.061367006] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902640.540003482] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902640.795438120] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902640.891088596] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902641.087690068] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902645.538661087] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902645.795309800] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902645.889838914] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902646.116763427] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902650.538411022] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902650.795278346] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902650.889933741] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902651.042816763] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902655.538410010] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902655.795382110] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902655.889949674] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902656.066591619] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902660.538663079] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902660.795600861] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902660.890117865] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902661.095405048] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902665.538564489] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902665.795320637] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902665.890020082] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902666.124207990] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902670.538668139] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902670.795331144] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902670.889934188] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902671.051382680] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902675.538556617] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902675.795485856] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902675.889894795] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902676.076399294] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902680.538473924] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902680.795960400] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902680.890107566] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902681.101705548] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902685.538537053] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902685.795249712] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902685.889875972] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902686.125694885] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902690.538523300] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902690.795364024] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902690.890107769] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902691.053370765] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902695.538513485] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902695.795352701] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902695.889885896] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902696.078490351] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902700.538457367] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902700.795468917] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902700.889923526] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902701.110570964] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902705.538374141] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902705.795339568] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902705.889934724] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902706.039558689] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902710.538409971] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902710.795374279] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902710.889871263] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902711.067675346] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902715.538590208] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902715.796765920] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902715.889909895] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902716.090479328] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902720.538472172] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902720.795348599] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902720.890027411] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902721.117428817] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902725.538613225] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902725.795346255] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902725.889902139] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902726.044696179] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902730.538581589] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902730.795375747] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902730.889872835] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902731.074142671] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902735.538687347] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902735.795370784] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902735.889868317] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902736.103371433] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902740.538639559] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902740.795419093] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902740.890032636] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902741.030575824] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902745.538419473] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902745.795857666] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902745.889979630] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902746.048447212] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902750.538476730] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902750.795392047] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902750.889909837] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902751.076530889] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902755.538617236] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902755.795444857] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902755.889914538] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902756.104748185] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902760.538451557] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902760.795451774] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902760.889915612] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902761.031401504] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902765.538404572] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902765.795292537] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902765.889865767] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902766.061683220] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902770.538659167] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902770.795546628] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902770.890022321] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902771.087435583] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902775.542813477] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902775.799908123] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902775.898400618] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902776.118928036] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902780.538787990] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902780.795449304] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902780.890137380] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902781.045922332] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902785.538562305] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902785.795530650] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902785.890038853] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902786.071762751] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902790.538699755] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902790.795463051] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902790.889905476] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902791.099650221] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902795.538618705] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902795.795459460] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902795.890126498] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902796.026626109] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902800.538580430] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902800.795306508] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902800.889956881] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902801.052945545] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902805.538448825] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902805.795330738] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902805.889785003] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902806.077013478] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902810.538476480] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902810.795340265] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902810.889915137] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902811.105463241] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902815.538416298] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902815.795375063] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902815.890133910] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902816.033611063] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902820.538785947] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902820.795396557] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902820.889856713] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902821.059464704] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902825.538416512] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902825.795277553] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902825.890082711] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902826.085789201] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902830.538594792] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902830.795362911] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902830.889995351] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902831.113604718] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902835.538329358] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902835.795225905] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902835.890066049] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902836.040001480] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902840.538528496] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902840.795318714] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902840.889966885] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902841.069682705] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902845.538481567] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902845.795308483] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902845.889836085] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902846.095534696] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902850.538824704] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902850.795887009] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902850.889898509] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902851.121682989] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902855.538434656] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902855.795310336] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902855.889963336] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902856.050096661] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902860.538584851] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902860.795505772] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902860.889987078] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902861.079611253] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902865.538465703] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902865.795277809] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902865.889884624] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902866.104434999] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902870.539362945] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902870.795539939] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902870.891346420] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902871.032769043] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902875.538588707] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902875.795443216] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902875.890169955] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902876.061048954] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902880.538545521] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902880.795476492] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902880.890124061] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902881.089805881] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902885.538892008] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902885.795469043] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902885.890180815] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902886.119276369] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902890.539525997] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902890.795281201] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902890.890694022] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902891.045875556] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902895.538400357] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902895.795403814] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902895.889903247] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902896.075637014] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902900.538541445] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902900.795516222] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902900.890125033] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902901.102518080] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902905.538586568] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902905.795423682] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902905.890126410] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902906.030639322] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902910.538700369] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902910.795678827] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902910.890181802] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902911.059453142] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902915.538716131] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902915.795624928] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902915.890060641] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902916.086882619] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902920.538686666] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902920.795438538] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902920.890038655] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902921.117901427] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902925.538522807] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902925.795397322] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902925.890027583] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902926.041958294] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902930.538570371] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902930.795515247] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902930.890134680] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902931.069002419] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902935.538517227] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902935.795319823] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902935.889906517] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902936.095614560] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902940.538552881] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902940.795490212] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902940.890026177] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902941.122232479] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902945.538763015] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902945.795507520] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902945.889977428] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902946.049774748] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902950.538687155] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902950.795535124] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902950.890189772] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902951.078637790] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902955.538442943] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902955.795266228] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902955.889937024] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902956.106545263] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902960.538697062] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902960.795431290] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902960.890157546] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902961.034779396] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902965.538657207] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902965.795488374] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902965.890077027] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902966.062378937] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902970.538774314] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902970.795440898] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902970.890074288] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902971.091469567] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902975.538760918] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902975.795303083] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902975.890051144] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902976.120685347] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902980.538579796] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902980.795402697] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902980.890155134] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902981.046736806] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902985.539464189] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902985.796457528] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902985.891031293] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902986.074253956] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902990.538671436] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902990.795429190] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902990.889849489] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902991.102450320] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787902995.538696995] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787902995.795531779] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787902995.890004311] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787902996.030598631] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903000.538382748] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903000.795391354] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903000.889911801] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903001.059766344] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903005.539254134] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903005.795494258] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903005.889925801] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903006.085139791] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903010.538947366] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903010.795980465] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903010.889871276] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903011.111611548] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903015.538451522] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903015.795264177] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903015.889855753] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903016.037854069] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903020.538855465] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903020.795346759] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903020.890036386] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903021.067012104] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903025.538449459] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903025.795294972] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903025.890145418] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903026.095395315] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903030.538512442] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903030.795412765] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903030.890176004] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903031.123274271] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903035.538679670] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903035.795410191] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903035.889916818] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903036.051198610] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903040.538512493] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903040.795367808] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903040.889897377] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903041.077435734] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903045.538470024] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903045.795563727] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903045.890022051] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903046.102545415] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903050.538561295] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903050.795278513] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903050.889895598] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903051.029987221] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903055.538395245] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903055.795412650] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903055.890103979] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903056.058794024] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903060.538526407] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903060.795439111] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903060.890061847] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903061.088329155] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903065.538435459] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903065.795431153] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903065.890171381] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903066.115522924] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903070.538691071] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903070.795398936] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903070.889924716] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903071.043858293] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903075.538485561] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903075.795277581] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903075.889922871] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903076.071414943] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903080.538427175] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903080.795349590] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903080.889932117] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903081.096631786] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903085.538554268] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903085.795301477] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903085.890094363] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903086.121229040] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903090.538449099] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903090.795288493] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903090.889880998] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903091.047602704] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903095.538537419] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903095.795351520] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903095.890028000] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903096.071880013] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903100.538412589] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903100.795491600] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903100.889908281] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903101.098219614] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903105.538451066] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903105.795283363] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903105.889800331] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903106.123073186] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903110.538437882] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903110.795268216] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903110.889840581] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903111.051179870] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903115.538482851] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903115.795274154] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903115.889841016] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903116.077252782] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903120.538705236] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903120.795271496] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903120.890000260] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903121.102875299] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903125.538571246] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903125.795367992] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903125.889953589] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903126.031567464] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903130.538469720] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903130.795393912] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903130.889868984] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903131.059351480] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903135.538500453] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903135.795243067] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903135.889838676] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903136.083859472] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)
+[dt_pt_bridge-7] [WARN] [1787903140.538847388] [dt_pt_bridge]: No /drive messages received yet. Is the relay or keyboard teleop running?
+[latency_logger-9] [WARN] [1787903140.796552031] [latency_logger]: 
+[latency_logger-9]   ╔═══════════════════════════════════════════════════╗
+[latency_logger-9]   ║  NO /teleop_echo received yet.                   ║
+[latency_logger-9]   ║  Check:                                          ║
+[latency_logger-9]   ║  ros2 topic hz /teleop_echo                      ║
+[latency_logger-9]   ║  ros2 topic hz /drive                            ║
+[latency_logger-9]   ║  ros2 node list | grep bridge                    ║
+[latency_logger-9]   ╚═══════════════════════════════════════════════════╝
+[trajectory_logger-10] [WARN] [1787903140.890292461] [trajectory_logger]: No data from either source yet.
+[trajectory_logger-10]   ros2 topic hz /ego_racecar/odom
+[trajectory_logger-10]   ros2 topic hz /odom
+[pt_odom_receiver-8] [WARN] [1787903141.108255689] [pt_odom_receiver]: No UDP packets received yet.
+[pt_odom_receiver-8]   Check car is running: python3 dt_pt_listener.py --send-odom --dt-host 172.20.10.2 --odom-port 9871
+[pt_odom_receiver-8]   Check car can reach WSL2: ping 172.20.10.2  (from car)

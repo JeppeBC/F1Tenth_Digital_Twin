@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Execute phase: start the DT container + supporting services. The ROS2
+# stack (sim, RViz2, DT<->PT bridge, loggers) launches itself automatically
+# once the desktop session comes up (MATE XDG autostart runs
+# /opt/f1tenth_ws/launch_dt.sh — see the Dockerfile for why: a `docker exec`
+# launch here could not get RViz2/Qt talking to the VNC X server no matter
+# what DISPLAY/XAUTHORITY was passed, since it sits outside the session's
+# process tree; autostart runs as a genuine child of that tree instead).
+source "$(dirname "${BASH_SOURCE[0]}")/_common.sh"
+
+echo "Starting f1tenth-dt, influxdb, grafana (pt_host=$PT_HOST)..."
+dtaas_compose up -d f1tenth-dt influxdb grafana
+
+echo "Waiting for the desktop session + ROS2 stack to come up..."
+sleep 10
+
+cat <<EOF
+
+Running. On the physical car, start (see repo README.md for the full table):
+  python3 dt_pt_listener.py --port 9870 --echo-back --send-odom \\
+      --dt-host <this-machine-ip> --odom-port 9871
+
+RViz2 desktop:   http://localhost:6080/
+Grafana:         http://localhost:3000/   (admin / admin)
+InfluxDB:        http://localhost:8086/
+
+For keyboard teleop, open a terminal in the noVNC desktop above and run:
+  ros2 run dt_pt_bridge ackermann_keyboard_teleop
+
+DT launch log (sim/RViz2/bridge/loggers stdout+stderr):
+  $F1TENTH_DIR/data/launch_dt.log
+
+Container logs:
+  docker compose -f "$DTAAS_DIR/docker-compose.yml" -f "$COMPOSE_FILE" logs -f f1tenth-dt
+EOF

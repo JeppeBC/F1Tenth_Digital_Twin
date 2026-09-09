@@ -1,0 +1,80 @@
+# F1Tenth DT overlay for the DTaaS localhost stack.
+#
+# Additive only — does not touch workspace-dex-localhost/docker-compose.yml.
+# Run alongside the base DTaaS stack from workspace-dex-localhost/workspace-dex-localhost/:
+#
+#   docker compose -f docker-compose.yml \
+#                   -f "../../R&D/F1Tenth_DTaaS/dtaas/compose/docker-compose.f1tenth.yml" \
+#                   up -d
+#
+# Not routed through Traefik (the noVNC/Grafana/InfluxDB web UIs don't
+# tolerate being served under a path prefix without breakage) — each is
+# published on its own host port instead:
+#   http://localhost:6080/   RViz2 desktop (noVNC)
+#   http://localhost:3000/   Grafana        (admin / admin — change on first login)
+#   http://localhost:8086/   InfluxDB UI
+#
+# All bind-mount sources below use ${F1TENTH_DIR_WIN} (set by
+# lifecycle/_common.sh), not relative paths: when merged via
+# `-f base.yml -f overlay.yml`, Compose resolves every relative host path
+# against the *base* file's directory, not each file's own — a plain
+# `../data` here silently resolved into workspace-dex-localhost/ instead of
+# dtaas/data/, and the same for Grafana's provisioning mounts below.
+services:
+  f1tenth-dt:
+    build:
+      context: ../..
+      dockerfile: dtaas/Dockerfile
+    image: f1tenth-dtaas:latest
+    restart: unless-stopped
+    shm_size: "512m"
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      - PT_HOST=${PT_HOST:-172.20.10.8}
+    ports:
+      - "6080:80"        # noVNC (RViz2 desktop)
+      - "9871:9871/udp"  # pt_odom_receiver — /odom from the car
+      - "9872:9872/udp"  # reserved: ackermann_cmd mirror from dt_pt_listener.py
+                          # (no listener implemented on the DT side yet)
+    volumes:
+      # Bind mount (not a named volume) so CSVs land in dtaas/data/ on the
+      # host — visible from Windows and readable by the original
+      # plot_*.py scripts for the analyze lifecycle phase.
+      - ${F1TENTH_DIR_WIN}/data:/workspace/f1tenth/data
+      - ${F1TENTH_DIR_WIN}/scripts:/workspace/f1tenth/scripts:ro
+
+  influxdb:
+    image: influxdb:2.7
+    restart: unless-stopped
+    ports:
+      - "8086:8086"
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      - DOCKER_INFLUXDB_INIT_PASSWORD=f1tenth-admin
+      - DOCKER_INFLUXDB_INIT_ORG=f1tenth
+      - DOCKER_INFLUXDB_INIT_BUCKET=f1tenth_dt
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=f1tenth-local-dev-token
+    volumes:
+      - influxdb-data:/var/lib/influxdb2
+
+  grafana:
+    image: grafana/grafana:11.3.0
+    restart: unless-stopped
+    depends_on:
+      - influxdb
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_AUTH_ANONYMOUS_ENABLED=false
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ${F1TENTH_DIR_WIN}/compose/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ${F1TENTH_DIR_WIN}/compose/grafana/dashboards:/var/lib/grafana/dashboards:ro
+
+volumes:
+  influxdb-data:
+  grafana-data:

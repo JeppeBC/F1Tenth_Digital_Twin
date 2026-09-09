@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Clean phase: full destructive reset — removes the f1tenth-dt/influxdb/
+# grafana containers AND their volumes (InfluxDB data, Grafana dashboards
+# state). dtaas/data/ (the CSVs on the host) is NOT touched.
+source "$(dirname "${BASH_SOURCE[0]}")/_common.sh"
+
+read -r -p "This deletes InfluxDB + Grafana data (not dtaas/data/ CSVs). Continue? [y/N] " ans
+case "$ans" in
+    [yY]*) ;;
+    *) echo "Aborted."; exit 0 ;;
+esac
+
+dtaas_compose down -v --remove-orphans
+echo "Cleaned. Run lifecycle/create to rebuild from scratch."

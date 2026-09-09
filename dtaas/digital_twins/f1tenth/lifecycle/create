@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Create phase: build/pull everything the F1Tenth DT needs. Idempotent.
+source "$(dirname "${BASH_SOURCE[0]}")/_common.sh"
+
+echo "Building f1tenth-dt image (ROS2 Humble + f1tenth_gym_ros + dt_pt_bridge)..."
+# Plain `docker build`, not `docker compose build`: compose's buildx-bake
+# path resolution mishandles the "&" in this repo's "R&D" parent folder and
+# fails immediately with a bogus "file not found" on the build context.
+REPO_ROOT="$(cd "$F1TENTH_DIR/.." && pwd)"
+docker build -f "$F1TENTH_DIR/Dockerfile" -t f1tenth-dtaas:latest "$REPO_ROOT"
+
+echo "Pulling influxdb + grafana..."
+dtaas_compose pull influxdb grafana
+
+echo "Create complete. Run lifecycle/execute next."

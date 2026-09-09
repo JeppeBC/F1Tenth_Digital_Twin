@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Save phase: push the most recent run's latency/trajectory CSVs (already on
+# disk under dtaas/data/<run>/, unaffected by this script) into InfluxDB so
+# Grafana can chart them.
+#
+# Usage: lifecycle/save [run_dir]   (defaults to the most recent run)
+source "$(dirname "${BASH_SOURCE[0]}")/_common.sh"
+
+RUN_DIR="${1:-$(latest_run_dir)}"
+if [ -z "$RUN_DIR" ]; then
+    echo "ERROR: no run directories found under $F1TENTH_DIR/data/" >&2
+    exit 1
+fi
+RUN_LABEL="$(basename "$RUN_DIR")"
+
+echo "Pushing $RUN_DIR (run=$RUN_LABEL) to InfluxDB..."
+dtaas_compose exec f1tenth-dt python3 \
+    /workspace/f1tenth/scripts/csv_to_influx.py \
+    "/workspace/f1tenth/data/$RUN_LABEL" --run "$RUN_LABEL"
+
+echo "Done. View in Grafana: http://localhost:3000/"

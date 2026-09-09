@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Evolve phase: reconfigure the DT based on analyze's findings.
+#
+# Not automated (evolving is a modeling decision, not a script) — this is a
+# placeholder documenting where the planned bicycle-model upgrade plugs in:
+#
+#   1. Add the model implementation under dtaas/ros2_ws/src/dt_pt_bridge/
+#      (e.g. a bicycle_model.py node, or a patch to f1tenth_gym_ros's
+#      vehicle dynamics step).
+#   2. Wire it into launch/f1tenth_dt.launch.py, either replacing the
+#      existing gym_bridge dynamics or running alongside it as a shadow
+#      model to diff against real /odom via trajectory_logger.py.
+#   3. lifecycle/create to rebuild the image, lifecycle/execute to run it,
+#      lifecycle/analyze to compare against the previous run's CSVs.
+echo "evolve: no automated action — see comments in this script."
