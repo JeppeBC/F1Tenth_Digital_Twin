@@ -95,8 +95,8 @@ class PtOdomReceiver(Node):
             self.get_logger().warn(
                 "No UDP packets received yet.\n"
                 "  Check car is running: python3 dt_pt_listener.py --send-odom "
-                "--dt-host 172.20.10.2 --odom-port 9871\n"
-                "  Check car can reach WSL2: ping 172.20.10.2  (from car)"
+                "--dt-host 10.134.32.76 --odom-port 9871\n"
+                "  Check car can reach WSL2: ping 10.134.32.76  (from car)"
             )
         else:
             self.get_logger().info(

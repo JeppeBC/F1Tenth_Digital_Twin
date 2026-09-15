@@ -9,7 +9,7 @@ import rclpy
 from rclpy.node import Node
 from ackermann_msgs.msg import AckermannDriveStamped
 
-DEFAULT_PT_HOST  = "172.20.10.8"
+DEFAULT_PT_HOST  = "10.134.32.77"
 DEFAULT_PT_PORT  = 9870
 DEFAULT_SEND_HZ  = 50
 
